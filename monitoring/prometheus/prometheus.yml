@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "enterprise-backend"
+    static_configs:
+      - targets:
+          - "enterprise-backend:8602"
